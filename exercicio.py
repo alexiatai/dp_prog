@@ -38,4 +38,15 @@ if opcao == 6:
         comissao_vendas = valor_vendas*0.05
         salario_total = salario_fixo + comissao_total_carros_vendidos + comissao_vendas 
         return salario_total
+    
+ if opcao == 7:
+    
+  def trocar_variavel(a,b):
+  novo_a =  b
+  novo_b = a
+  return novo_a, novo_b
+
+if opcao == 8: 
+
+    def converter_celsius_fahrenheit(celsius):
 
