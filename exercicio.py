@@ -46,7 +46,7 @@ if opcao == 6:
   novo_b = a
   return novo_a, novo_b
 
-if opcao == 8: 
+if opcao == 9: 
 
     def converter_celsius_fahrenheit(celsius):
 
