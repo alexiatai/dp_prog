@@ -1,3 +1,5 @@
+import random  
+
 def descobrir_menor_inteiro(num1, num2, num3):
     inteiro = [num1, num2, num3]
     menor = inteiro[0]
@@ -23,7 +25,7 @@ def verificar_tipo_triangulo(valor_x, valor_y, valor_z):
 
 def calcular_media(prova1, prova2, prova3):
 
-    if prova1.lower() and prova2.lower() prova3.lower() == "faltei":
+    if prova1.lower() and prova2.lower() and prova3.lower() == "faltei":
         media = 0
 
     if prova1.lower() and prova2.lower() == "faltei":
@@ -40,8 +42,8 @@ def calcular_media(prova1, prova2, prova3):
     if prova3.lower() == "faltei":
         media  = prova2 + prova1/3
 
-    if soma  = prova1 + prova2 + prova3
-        media = soma/3
+    soma  = prova1 + prova2 + prova3
+    media = soma/3
 
 
     if media < 3:
@@ -50,13 +52,9 @@ def calcular_media(prova1, prova2, prova3):
     if media >=7:
         return"Aprovado", media 
 
-    if media <7 and >=3:
+    if media <7 and media >=3:
         return "Em recuperação", media
 
-
-
-"""Fa ̧ca um programa que dadas as notas P1, P2 e P3 de um aluno de computa ̧c ̃ao 1, informe a situa ̧c ̃ao e
-m ́edia deste aluno. Caso o aluno tenha faltado a alguma prova, a entrada deve ser dada como “faltei”."""
 
 def criar_triangulo(numero):
   lista_de_numero = []
@@ -69,6 +67,46 @@ def criar_triangulo(numero):
 numero = int(input("Insira o nº de linhas: "))
 lista = criar_triangulo(numero)
 
+def calcular_par_impar(numero):
+    if numero%2 == 0:
+        return "Par"
+    if numero%2 != 0:
+        return "Ímpar"
+
+    
+"""FALTA A SEIS"""
+
+def imprimir_figura(numero):
+  lista_de_numero = []
+  for linha in range (1,numero+1):
+    lista_de_numero.append(linha * "*")
+  return lista_de_numero
+  
+numero = int(input("Insira as linhas: "))
+lista = imprimir_figura(numero)
+for linha in lista:
+  print(linha)
+
+
+
+def adivinhar_valor(numero):
+    valor = random.randint(1,1510)
+    if numero == valor:
+        return "Acertou"
+
+    if numero > valor:
+        return "O valor é menor, tente outra vez"
+
+    if numero < valor:
+        return "O valor é maior, tente outra vez"
+
+def ordenar_valores(valores):
+    ordenar = valores
+    numeros_ordenados = sorted(ordenar)
+    return numeros_ordenados
+    
+ """FALTA A DEZ """
+   
 
 if __name__=="__main__":
 
@@ -84,4 +122,4 @@ if __name__=="__main__":
     print("9- Converter graus em fahrenheit")
     print("10- Média ponderada")
 
-    opcao = int(input("Insira a opção: "))
+opcao = int(input("Insira a opção: "))
