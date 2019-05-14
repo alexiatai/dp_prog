@@ -69,7 +69,17 @@ def calcular_par_impar(numero):
         return "Ímpar"
 
     
-"""FALTA A SEIS"""
+def calcular_expressao(numero):
+    denominador = 1
+    numerador = 1
+    resultado = 0
+    while (numero != 0):
+        numero -=1
+        resultado +=numerador/denominador
+        numerador +=2
+        denominador +=1
+        return resultado
+
 
 
 def adivinhar_valor(numero):
@@ -84,7 +94,12 @@ def adivinhar_valor(numero):
         return "O valor é maior, tente outra vez"
 
 
-"""FALTA A OITO"""
+def ordenar_listas(lista):
+    
+    for pivo in range(len(lista)-1):
+        for teste in range(pivo+1, len(lista)):
+            if lista[pivo] > lista[teste]:
+                return lista
 
 
 def ordenar_valores(valores):
@@ -92,7 +107,7 @@ def ordenar_valores(valores):
     numeros_ordenados = sorted(ordenar)
     return numeros_ordenados
     
- """FALTA A DEZ """
+"""FALTA A DEZ """
    
 if __name__=="__main__":
 
@@ -153,19 +168,23 @@ if __name__=="__main__":
 
     if opcao == 6:
 
-        print("Em manutenção")
+        
+        expressao = calcular_expressao(numero)
+        print(expressao)
 
 
     if opcao == 7:
 
-        numero  = input("Valor para tentar adivinhar: ")
+        numero  = int(input("Valor para tentar adivinhar: "))
         adivinhar = adivinhar_valor(numero)
         print(adivinhar)
 
 
     if opcao == 8:
 
-        print("Em manutenção")
+        lista = list(input("Entre com os valores da lista: "))
+        ordena = ordenar_listas(lista)
+        print(ordena)
 
     if opcao == 9: 
 
