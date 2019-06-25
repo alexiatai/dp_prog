@@ -2,7 +2,7 @@
    
 def calcular_area(base, altura):
    if base < 0 or altura < 0:
-      return "nan"
+      return float("nan")
     return (base*altura)/2
 
 
