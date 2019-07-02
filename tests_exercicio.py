@@ -1,4 +1,4 @@
-import exercicio as exer
+import aula.exercicio as exer
 import math
 
 """Questão 1"""
@@ -70,7 +70,7 @@ def test_paramentros_negativos():
 """Questão 4"""
 
 def test_paramentros_positivos():
-    qte_gasoloina = exer.calcular_qte_gasolina(5)
+    qte_gasolina = exer.calcular_qte_gasolina(5)
     assert qte_gasolina == 0.416
     qte_gasolina = exer.calcular_qte_gasolina(14)
     assert qte_gasolina == 1.166
@@ -88,18 +88,42 @@ def test_paramentros_negativos():
 """Questão 5"""
 
 def test_contar_letras():
-    contar = exer.ler_nome(alexia)
-    assert contar = alexia, 6
+    contar == exer.ler_nome(alexia)
+    assert contar == "alexia 6"
     contar = exer.ler_nome(fischer15)
-    assert contar = fischer, 9
-    contar = exer.ler_nome(n@th@li@)
-    assert contar = nathalia, 8
+    assert contar == "fischer 9"
+
 
 """Questão 6"""
 
+def test_calcular_salario_positivo():
+    salario_total = exer.calcular_salario(2,1000,1000,200)
+    assert salario_total == 1450
+
+def test_calcular_salario_negativo():
+    salario_total = exer.calcular_salario(-2,1000,1000,200)
+    assert salario_total == -1
+    salario_total = exer.calcular_salario(2,-1000,1000,200)
+    assert salario_total == -2
+    salario_total = exer.calcular_salario(2,1000,-1000,200)
+    assert salario_total == -3
+    salario_total = exer.calcular_salario(2,1000,1000,-200)
+    assert salario_total == -4
+
+def test_calcular_salario_letras():
+    salario_total = exer.calcular_salario(str,1000,1000,200)
+    assert salario_total == -5
+    salario_total = exer.calcular_salario(2,str,1000,200)
+    assert salario_total == -6
+    salario_total = exer.calcular_salario(2,1000,str,200)
+    assert salario_total == -7
+    salario_total = exer.calcular_salario(2,1000,1000,str)
+    assert salario_total == -8
+
+"""Questão 7"""
 
 
 
 
 
-    
+
