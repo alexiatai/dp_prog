@@ -1,0 +1,40 @@
+@startuml
+class Série {
+     nome
+     ano_lancamento
+     sinopse
+     data
+    nota
+    escrever_comentario()
+}
+
+class Filme {
+    nome
+    ano_lancamento
+    sinopse
+    data
+    nota
+    escrever_comentario()
+}
+
+class Livro {
+    nome
+    autor 
+    ano_lancamento
+    sinopse
+    data
+    nota
+    escrever_comentario()
+}
+
+class Entretenimento_Alexia {
+    avaliar_melhor()
+}
+
+
+Entretenimento_Alexia -- Livro
+Entretenimento_Alexia -- Série
+Filme - Entretenimento_Alexia
+
+
+@enduml
