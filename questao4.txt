@@ -1,0 +1,8 @@
+Classes:
+
+É um conjunto de objetos que possuem características similares.
+ As classes definem o comportamento de seus objetos por meio de métodos.
+
+ Obejtos: 
+
+ Na vida real é algo que podemos nomear. Já na programação é uma instância de classe.
