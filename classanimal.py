@@ -4,6 +4,7 @@ class Animal:
         self.nome = nome
 
 class Cachorro(Animal):
-    def __init__(self, raca, cor_pelo):
+    def __init__(self, idade, nome, raca, cor_pelo):
+        super().__init__(idade, nome)
         self.raca = raca
         self.cor_pelo = cor_pelo
