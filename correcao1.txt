@@ -1,0 +1,15 @@
+q1altA)
+
+AUTOMOVEL:
+roda
+transportar()
+acelerar()
+freiar()
+buzinar()
+
+q1altB)
+
+
+q1altC)
+
+MORADIA:
