@@ -1,23 +1,28 @@
 class Estado:
 
-    def __init__(self, nome, capital, dimensao, lista_cidades, lista_estados_fronteira):
+    def __init__(self, nome, capital, dimensao):
         self.nome = nome
         self.capital = capital
         self.dimensao = dimensao
         self.lista_cidades = []
         self.lista_estados_fronteira = []
     
-    def definir_instancias(self, nome, capital, dimensao): 
-        nome = "Santa Catarina"
-        capital = "Floripa"
-        dimensao = "x"
-
-    def verificar_estado_igual(self, nome, capital, lista_cidades):
-        for cidade in lista_cidades:
-            if nome == nome and capital == capital and cidade == cidade:
-                return "Estados iguais"
-            else:
-                return "Estados diferentes"
+    def verificar_estado_igual(self, nome, novo_estado):
+        if self.nome == novo_estado.nome:
+            if self.capital == novo_estado.capital:
+                for cidade in self.lista_cidades:
+                    if cidade not in novo_estado.lista_cidade:
+                        return False
+                    return True
+                return False
+            
+    def virificar_fronteira(self, estado):>
+        if self.verificar_estado(estado) is False:
+            self.lista_fronteira.append(estado)
+            return True
+        return False
+            
+    def 
 
 nome = input("Entre com o nome do estado: ")
 capital = input("Entre com a capital do estado: ")
