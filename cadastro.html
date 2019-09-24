@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste de aula</title>
+<style type="text/css">
+	
+body{
+	background-color: #F7BBC9;
+	font-size: 15px;
+	text-align: center;
+}	
+
+h1 {
+	font-size: 60px;
+	color: #B92243;
+}
+
+h2 {
+	font-size: 50px;
+	color: #E73C64;
+}
+
+a {
+	font-size: 20px;
+	color: #EB5F80;
+
+}
+
+</style>
+</head>
+<body>
+<h1>Cadastro</h1>
+<h2>Cadastro</h2>
+<a href=/teste>Página de teste</a>
+<br>
+<a href=/inicio>Página de inicio</a>
+
+<form action='/gravar_usuario' method="post">
+    {{form.csrf_token}}
+    {{form.nome.label}}{{form.nome}}<br>
+    {{form.email.label}}{{form.email}}<br>
+    {{form.senha.label}}{{form.senha}}<br>
+    {{form.botao}}
+</form>
+
+</body>
+</html>
